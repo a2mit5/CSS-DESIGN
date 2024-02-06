@@ -1,0 +1,199 @@
+/* Styles for body */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #b9263f, #ff4d4d);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for h1 */
+h1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styles for h2 */
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+/* Styles for links */
+a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Styles for paragraphs */
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Styles for italic text */
+em {
+  font-style: italic;
+}
+
+/* Styles for bold and underlined text */
+strong, u {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Styles for verses */
+strong u {
+  font-style: normal;
+}
+
+/* Styles for chorus */
+u strong {
+  font-size: 1.2em;
+  color: #ffc107;
+}
+
+/* Styles for normal1 */
+.normal1 {
+  font-family: Arial, sans-serif;
+  color: #FF0000; /* Red */
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* Styles for normal1 */
+.normal1 {
+  font-family: Arial, sans-serif;
+  color: #FF0000; /* Red */
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+  background-color: #FFD700; /* Gold */
+}
+
+/* Styles for lyrics1 */
+.lyrics1 {
+  font-family: Impact, sans-serif;
+  color: #8B0000; /* DarkRed */
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  background-color: #FF4500; /* OrangeRed */
+}
+
+/* Styles for normal2 */
+.normal2 {
+  font-family: Courier New, monospace;
+  color: #800000; /* Maroon */
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  background-color: #8A2BE2; /* BlueViolet */
+}
+
+/* Styles for lyrics2 */
+.lyrics2 {
+  font-family: 'Rock Salt', cursive;
+  color: #B22222; /* FireBrick */
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  background-color: #4682B4; /* SteelBlue */
+}
+
+/* Styles for normal3 */
+.normal3 {
+  font-family: 'Times New Roman', serif;
+  color: #FF4500; /* OrangeRed */
+  font-weight: bold;
+  font-style: italic;
+  font-size: 22px;
+  background-color: #2E8B57; /* SeaGreen */
+}
+
+/* Styles for lyrics3 */
+.lyrics3 {
+  font-family: 'Comic Sans MS', cursive;
+  color: #DC143C; /* Crimson */
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  background-color: #DAA520; /* GoldenRod */
+}
+
+/* Styles for violent */
+.violent {
+  font-family: Impact, sans-serif;
+  color: #FF0000; /* Red */
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+  background-color: #800080; /* Purple */
+}
+
+/* Styles for normal4 */
+.normal4 {
+  font-family: 'Verdana', sans-serif;
+  color: #800000; /* Maroon */
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  background-color: #FF6347; /* Tomato */
+}
+
+/* Styles for lyrics4 */
+.lyrics4 {
+  font-family: 'Arial', sans-serif;
+  color: #B22222; /* FireBrick */
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+  background-color: #00FFFF; /* Cyan */
+}
+
+/* Styles for normal5 */
+.normal5 {
+  font-family: 'Tahoma', sans-serif;
+  color: #FF4500; /* OrangeRed */
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  background-color: #FA8072; /* Salmon */
+}
+
+/* Styles for lyrics5 */
+.lyrics5 {
+  font-family: 'Georgia', serif;
+  color: #DC143C; /* Crimson */
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+  background-color: #00FF7F; /* SpringGreen */
+}
+
+
+
+
+/* Styles for verse numbers */
+u strong::before {
+  content: "Verse " counter(verse) ": ";
+  counter-increment: verse;
+}
+
+/* Styles for chorus */
+em + u strong::before {
+  content: "Chorus: ";
+}
+
+/* Styles for line breaks */
+br {
+  display: block;
+  margin-bottom: 10px;
+}
