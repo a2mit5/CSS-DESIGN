@@ -1,0 +1,123 @@
+/* Reset CSS */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd, dt, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+ h2, h3, h4, h5, h6,h7{
+font-family: 'Showcard Gothic', cursive;
+background: linear-gradient(to right, lightgreen , hsl(123, 85%, 38%)); /* Black and white gradient background */
+font-size: 48px;
+color: black;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('im8.jpg');
+    background-size: contain;
+    background-color: rgba(25, 25, 25, 0.5); /* Adjust the alpha value (last parameter) for transparency */
+    background-position: center;
+    opacity: 2; /* Adjust the opacity value as needed */
+}
+
+header {
+    font-family: 'Showcard Gothic', cursive; /* Use funky font */
+    font-size: 75px;
+    background: linear-gradient(to right, #000, hsl(123, 85%, 38%)); /* Black and white gradient background */
+    padding: 20px; /* Reduce padding for the header */
+    text-align: center;
+    color: white; /* White text color */
+    transition: font-size 0.3s; /* Smooth transition for font-size */
+}
+
+header:hover {
+    font-size: 60px; /* Decreased font size on hover */
+}
+
+.pulse {
+   
+    background-image: url("im2.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 300px;
+    animation: pulse-animation 1s infinite alternate; /* Apply pulse animation */
+}
+
+@keyframes pulse-animation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+.des, .pulse, .about, .image, .more, .heading, .photo {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.des p, .about p, .more p {
+    margin-bottom: 15px;
+    font-family: 'Ink Free', sans-serif; /* Use Ink Free font */
+    font-size: 24px; /* Initial font size */
+    background: linear-gradient(to right, hsl(123, 85%, 38%), #000);
+    padding: 150px; /* Keep the padding as 50px for .des */
+    text-align: center;
+    color: white;
+    padding:  40px; 
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.heading img {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.horizontal-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+#logo img {
+    max-width: 100px;
+}
+
+#contact-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
