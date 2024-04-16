@@ -1,0 +1,276 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    overflow: auto; /* Clear the float */
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+}
+
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* Light text color */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern and clean font style */
+    padding: 20px 10%; /* Padding around the content inside footer */
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Vertical alignment of the content */
+}
+
+footer .left,
+footer .right {
+    display: flex; /* Enables flexbox for aligning logo and links */
+    align-items: center; /* Aligns items vertically */
+}
+
+footer .left .logo img {
+    width: 100px; /* Logo width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer .right .links {
+    display: flex; /* Ensures links are laid out horizontally */
+    align-items: left; /* Centers links vertically */
+    height: 100%; /* Full height to match the parent */
+    width:4em ;
+}
+
+footer .right .links a {
+    margin-left: 20px; /* Space between links */
+    color: #fff; /* Text color for links */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: 500; /* Slightly bold text for readability */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+footer .right .links a:hover {
+    color: #4CAF50; /* Color change on hover */
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Homepage specific styles */
+.banner {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url('/IMAGES/Default_image_for_fitness_products_back_ground_images_3.jpg'); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.banner .container {
+    position: relative; /* Ensure text is centered within the banner */
+}
+
+.banner h1 {
+    font-size: 48px;
+    font-family: 'Arial Black', sans-serif; /* Different font family */
+    letter-spacing: 2px; /* Letter spacing */
+}
+
+.banner p {
+    font-size: 20px;
+    letter-spacing: 1px; /* Letter spacing */
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url(''); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 48px; /* Adjust font size as needed */
+}
+
+.hero p {
+    font-size: 20px; /* Adjust font size as needed */
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff5733; /* Custom CTA button color */
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+.cta {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Align items horizontally at the center */
+}
+
+.cta-button:hover {
+    background-color: #ff8c66; /* Custom hover color */
+}
+
+/* Social proof section */
+.social-proof {
+    background-color: #f2f2f2; /* Background color for social proof section */
+    padding: 50px 0;
+}
+
+.social-proof h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.featured-products, .testimonials {
+    padding: 50px 0;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial span {
+    font-weight: bold;
+}
+
+
+/* About page specific styles */
+.about-content {
+    padding: 50px 0;
+}
+
+/* Contact page specific styles */
+.contact-form {
+    padding: 50px 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form label {
+    margin-bottom: 10px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.contact-form form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form form button:hover {
+    background-color: #555;
+}
+
+.price {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.price p {
+    font-size: 24px;
+    color: rgb(185, 10, 10);
+    font-weight: bold;
+    margin: 0;
+}
+@media (max-width: 600px) {
+    .video-container {
+        padding-bottom: 75%; /* Adjusting aspect ratio for a different look on smaller screens */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .banner {
+        padding: 80px 0;
+    }
+}
